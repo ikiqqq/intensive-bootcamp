@@ -1,0 +1,8 @@
+// console.log(Math.ceil(3.1))
+// console.log(Math.floor(3.7))
+// console.log(Math.round(3.6))
+// console.log(Math.round(3.4))
+// console.log(Math.round(3.5))
+// console.log(Math.max(1,5,71,2,4,10))
+// console.log(Math.min(1,5,71,2,4,10))
+console.log(Math.round(Math.random() * 100))
