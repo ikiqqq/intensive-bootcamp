@@ -40,3 +40,6 @@ if(waktu == 0){
 }
 
 console.log(kecepatan)
+
+// membuat flowchart
+// https://app.diagrams.net/
