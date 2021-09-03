@@ -1,30 +1,57 @@
-function countdown(angka) {
-    console.log(angka);
-    if (angka > 0) {
-      countdown(angka - 1);
-    } else {
-      return;
-    }
-  }
-  countdown(10);
+// function countdown(angka) {
+//     console.log(angka);
+//     if (angka > 0) {
+//       countdown(angka - 1);
+//     } else {
+//       return;
+//     }
+//   }
+//   countdown(10);
+
+//
   
-  function factorialLoop(angka) {
-    let result = 1;
-    for (let i = 1; i <= angka; i++) {
-      result *= i;
-    }
-    return result;
-  }
-  console.log(factorialLoop(5));
+//   function factorialLoop(angka) {
+//     let result = 1;
+//     for (let i = 1; i <= angka; i++) {
+//       result *= i;
+//     }
+//     return result;
+//   }
+//   console.log(factorialLoop(5));
   
-  function factorialRecursive(angka) {
-    if (angka == 1) {
-      return 1;
-    } else {
-      return angka * factorialRecursive(angka - 1);
-    }
+//   function factorialRecursive(angka) {
+//     if (angka == 1) {
+//       return 1;
+//     } else {
+//       return angka * factorialRecursive(angka - 1);
+//     }
+//   }
+//   console.log(factorialRecursive(5));
+
+//
+function computeFactorial(num) {
+  let results = 1;
+
+  for (let i = 2; i <= num; i++) {
+    results = results * i;
   }
-  console.log(factorialRecursive(5));
+
+  return results;
+}
+
+console.log(computeFactorial(5));
+
+
+//
+function calculateFactorial(num) {
+  if (num === 1) {
+    return 1;
+  } else {
+    return num * calculateFactorial(num - 1);
+  }
+}
+
+console.log(calculateFactorial(5));
   
 
 
@@ -58,19 +85,19 @@ function countdown(angka) {
 
     // console.log("a","d","r","t","f","w");
 
-    //average
-    arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // //average
+    // arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    function average(array) {
-        var total = 0;
-        var count = arry.length;
+    // function average(array) {
+    //     var total = 0;
+    //     var count = arry.length;
 
-        array.forEach(function(e,i) { 
-            total += e;
+    //     array.forEach(function(e,i) { 
+    //         total += e;
             
-        });
+    //     });
     
-        return total / count;
-    }
+    //     return total / count;
+    // }
     
-    console.log(average(arry));
+    // console.log(average(arry));
